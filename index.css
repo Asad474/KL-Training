@@ -1,0 +1,36 @@
+h1 {
+    color: red
+}
+
+.container {
+    text-align: center;
+    border: 1px solid black;
+    width: 50%;
+    margin: 40px auto;
+}
+
+.table-content, th, td {
+    border: 1px solid;
+    background-color: orangered;
+}
+
+.image-container {
+    width: 50%;    
+    margin: 40px auto;
+}
+
+img {
+    height: 300px;
+    width: 400px;
+}
+
+.form-container {
+    width: 50%;
+    margin: 50px auto;
+    border: 2px solid black;
+    padding: 20px 10px;
+}
+
+.form-container h2 {
+    text-align: center;
+}

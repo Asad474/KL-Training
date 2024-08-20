@@ -208,3 +208,81 @@ let strings = {
 
 console.log(cars);
 console.log(strings);
+
+// Difference between null and undefined
+let my_var;
+console.log('My Var', my_var);
+
+my_var = 10;
+console.log('My Var', my_var);
+
+my_var = null;
+console.log(my_var);
+
+//Objects (Key Value mapping)
+// const sakshi_record = { rollno: 1, name: "Sakshi", classroom: "12" };
+// const arbaz_record = { rollno: 2, name: "Arbaz", classroom: "11" };
+// const ivan_record = { rollno: 3, name: "Ivan", classroom: "10" };
+
+// console.log(sakshi_record);
+// console.log(arbaz_record);
+// console.log(ivan_record);
+
+//Object Constructor
+// function student_records(rollno, name, classroom) {
+//     this.rollno = rollno;
+//     this.name = name;
+//     this.classroom = classroom;
+// }
+
+// const sakshi_record = new student_records(1, "Sakshi", 12);
+// const arbaz_record = new student_records(2, "Arbaz", 11);
+// const ivan_record = new student_records(3, "Ivan", 10);
+
+// console.log(sakshi_record);
+// console.log(arbaz_record);
+// console.log(ivan_record);
+
+
+// Class
+// Method in class: Function used in class called methods.
+class student_records {
+    constructor (rollno, name, classroom) {
+        this.rollno = rollno;
+        this.name = name;
+        this.classroom = classroom;       
+    }
+
+    display_records () {
+        console.log(this.name," of ", this.rollno, " studies in ", this.classroom);
+    }
+}
+
+const sakshi_record = new student_records(1, "Sakshi", 12);
+// student_records {
+//    constructor(1, Sakshi, 12) {
+//        sakshi_record.rollno = 1; 
+//        sakshi_record.name = Sakshi;
+//        sakshi_record.classroom = 12;
+//    }
+// }
+
+const arbaz_record = new student_records(2, "Arbaz", 11);
+// student_records {
+//    constructor(2, Arbaz, 11) {
+//        arbaz_record.rollno = 2; 
+//        arbaz_record.name = Arbaz;
+//        arbaz_record.classroom = 11;
+//    }
+// }
+
+const ivan_record = new student_records(3, "Ivan", 10);
+
+console.log("Using classes");
+console.log(sakshi_record);
+console.log(arbaz_record);
+console.log(ivan_record);
+
+sakshi_record.display_records()
+arbaz_record.display_records()
+ivan_record.display_records()

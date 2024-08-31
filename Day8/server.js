@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: true }));
 
 const port = 8080;
-let contact_obj = {};
+let contact_obj = { username: "", email: "" };
 
 app.get('/', (req, res) => {
     res.render('home');
